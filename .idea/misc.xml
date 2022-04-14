@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Cotuca/Downloads/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_tela_do_meio.xml" value="0.1082427536231884" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable-v24/background_triangulo_esquerdo.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_botao.xml" value="0.18981481481481483" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_botao_Laranja.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_botao_laranja.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_botao_roxo_rosa.xml" value="0.19722222222222222" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_caixa.xml" value="0.18981481481481483" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_content.xml" value="0.18981481481481483" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_content_medicamento.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_interno_spinner.xml" value="0.18981481481481483" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_orange.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_telaprincipal.xml" value="0.18518518518518517" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/ic_add.xml" value="0.18981481481481483" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/ic_registro.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/ic_voltar.xml" value="0.15555555555555556" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/font/poppins_light.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/font/poppins_medium.xml" value="0.21851851851851853" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_content_medicamento.xml" value="0.18931159420289856" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_enfermeiro.xml" value="0.1859375" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_esquecisenha.xml" value="0.2346014492753623" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_home.xml" value="0.22871376811594202" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_medicamento.xml" value="0.18" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_novasenha.xml" value="0.22" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_paciente.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_patologia.xml" value="0.25" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_responsavel.xml" value="0.25" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_tela_do_meio.xml" value="0.16927083333333334" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_tela_intermediaria_dos_cadastros.xml" value="0.25" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_users_list.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activitymedicamentotelaeregistro.xml" value="0.33" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activitypacientetelaeregistro.xml" value="0.1" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activitypatologiatelaeregistro.xml" value="0.18206521739130435" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activityresponsaveltelaeregistro.xml" value="0.15729483282674772" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/content_medicamento.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/content_paciente.xml" value="0.254981884057971" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/content_patologia.xml" value="0.18206521739130435" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/content_person.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/content_responsavel.xml" value="0.1641337386018237" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/contentmedicamento.xml" value="0.18931159420289856" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/item_user_recycler.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/menu/search_view.xml" value="0.3375" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/menu/search_view_medicamento.xml" value="0.3375" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/menu/search_view_paciente.xml" value="0.262037037037037" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/menu/search_view_patologia.xml" value="0.3375" />
+        <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/menu/search_view_responsavel.xml" value="0.262037037037037" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

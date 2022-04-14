@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/azul_claro">
+    <LinearLayout
+        android:id="@+id/layContentResponsavel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background_content"
+        tools:ignore="ExtraText"
+        android:orientation="vertical">
+
+        <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Paciente:"
+        style="@style/TamanhoLetracontentpergunta"
+        />
+    <TextView
+        android:id="@+id/tvContentidpacienteresponsavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TamanhoLetracontentresposta"/>
+</LinearLayout>
+        //Nome Paciente
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome Paciente:"
+                style="@style/TamanhoLetracontentpergunta"
+                />
+            <TextView
+                android:id="@+id/tvContentNomePacienteResp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              style="@style/TamanhoLetracontentpergunta"
+                android:text="Nome Responsável:"/>
+            <TextView
+                android:id="@+id/tvContentNomeResponsavelResp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="Email Responsável:"/>
+            <TextView
+                android:id="@+id/tvContentEmailResponsavelResp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TamanhoLetracontentpergunta"
+        android:text="Celular Responsável:"/>
+    <TextView
+        android:id="@+id/tvContentCelularResponsavelResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TamanhoLetracontentresposta"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TamanhoLetracontentpergunta"
+        android:text="Whatsapp Responsável:"/>
+    <TextView
+        android:id="@+id/tvContentWhatsappResponsavelResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TamanhoLetracontentresposta"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo do Responsável:"
+        style="@style/TamanhoLetracontentpergunta"/>
+    <TextView
+        android:id="@+id/tvContentTipoResponsavelResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TamanhoLetracontentresposta"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensagem de Emergência:"
+            style="@style/TamanhoLetracontentpergunta"/>
+        <TextView
+            android:id="@+id/tvContentmensagemdeemergenciaResp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TamanhoLetracontentresposta"/>
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/endLine_responsavel"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+</LinearLayout>

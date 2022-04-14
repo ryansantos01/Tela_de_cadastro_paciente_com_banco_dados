@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/azul_claro"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:id="@+id/layContentPaciente"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/background_content"
+    tools:ignore="ExtraText">
+
+//Bloco do Nome
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nome:"
+    style="@style/TamanhoLetracontentpergunta"/>
+    <TextView
+        android:id="@+id/tvContentNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        style="@style/TamanhoLetracontentresposta"/>
+</LinearLayout>
+
+
+//Bloco do Nascimento
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_weight="1">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Nascimento:"
+           style="@style/TamanhoLetracontentpergunta"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           style="@style/TamanhoLetracontentresposta"
+           android:id="@+id/tvContentNascimento"
+          />
+
+   </LinearLayout>
+
+//Bloco do Sexo[Masculino ou feminino]
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TamanhoLetracontentpergunta"
+        android:text="Sexo:"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TamanhoLetracontentresposta"
+        android:id="@+id/tvContentSexo" />
+</LinearLayout>
+</LinearLayout>
+
+//Bloco do endereço
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Endereço:"
+               style="@style/TamanhoLetracontentpergunta"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContentEndereco"
+                style="@style/TamanhoLetracontentresposta"/>
+
+        </LinearLayout>
+
+        //Bloco do número da residência
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="Número da Residência:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"
+                android:id="@+id/tvContentNumerodaresidencia" />
+        </LinearLayout>
+
+        //Bloco do complemento
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="Complemento:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvContentComplemento"
+                style="@style/TamanhoLetracontentresposta"/>
+        </LinearLayout>
+
+        //Bloco da cidade
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="Cidade:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"
+                android:id="@+id/tvContentCidade"
+                />
+        </LinearLayout>
+
+        //Bloco do estado
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="Estado:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"
+                android:id="@+id/tvContentEstado" />
+        </LinearLayout>
+
+        //Bloco do CEP
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="CEP:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"
+                android:id="@+id/tvContentCep" />
+        </LinearLayout>
+
+        //Bloco do Plano de saúde
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="Plano de saúde:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"
+                android:id="@+id/tvContentPlanodesaude" />
+        </LinearLayout>
+
+        //Bloco do Telefone
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="Telefone:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"
+                android:id="@+id/tvContentTelefone"
+                />
+        </LinearLayout>
+
+        //Bloco do Estado civil
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="Estado Civil:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"
+                android:id="@+id/tvContentEstadocivil"
+                />
+        </LinearLayout>
+
+        //Bloco do RG
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="RG:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"
+                android:id="@+id/tvContentRg"
+                />
+        </LinearLayout>
+
+//Bloco do CPF
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentpergunta"
+                android:text="CPF:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TamanhoLetracontentresposta"
+                android:id="@+id/tvContentCpf" />
+        </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/endLine"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+    </LinearLayout>
+

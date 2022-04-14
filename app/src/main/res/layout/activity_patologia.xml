@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patologia_Activity"
+    android:background="@color/azul_claro">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/textRegistrodapatologiaPat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Registro da Patologia"
+            android:textColor="@color/black"
+            style="@style/TamanhoLetra"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp"/>
+
+<TextView
+    android:id="@+id/textNomepacientePat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nome Paciente"
+    style="@style/TamanhoLetra"
+    android:textColor="@color/black"
+    app:layout_constraintLeft_toLeftOf="@id/textRegistrodapatologiaPat"
+    app:layout_constraintTop_toBottomOf="@id/textRegistrodapatologiaPat"
+    android:layout_marginTop="10dp"/>
+<TextView
+    android:id="@+id/textonomepacientepatologia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/TamanhoLetra"
+    android:textStyle="italic|bold"
+    android:textColor="@color/black"
+    app:layout_constraintLeft_toLeftOf="@id/textNomepacientePat"
+    app:layout_constraintTop_toBottomOf="@id/textNomepacientePat"
+    android:layout_marginTop="5dp"/>
+    <Spinner
+        android:id="@+id/spinnerpatnomepaciente"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textonomepacientepatologia"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:popupBackground="@drawable/background_interno_spinner"/>
+<TextView
+    android:id="@+id/textNomemedicoPat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    style="@style/TamanhoLetra"
+    android:text="Nome Médico:"
+    app:layout_constraintTop_toBottomOf="@id/spinnerpatnomepaciente"
+    android:layout_marginTop="5dp"
+    app:layout_constraintLeft_toLeftOf="@id/textNomepacientePat"/>
+
+    <EditText
+        android:id="@+id/caixapatnomemedico"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/background_caixa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/textNomemedicoPat"
+        android:layout_marginTop="5dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="0dp"
+       style="@style/TamanhoLetracaixa" />
+    <TextView
+        android:id="@+id/textNomepatologiaPat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Patologia:"
+        style="@style/TamanhoLetra"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/caixapatnomemedico"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp" />
+<EditText
+    android:id="@+id/caixapatnomepatologia"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/background_caixa"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    app:layout_constraintTop_toBottomOf="@id/textNomepatologiaPat"
+    android:layout_marginTop="5dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="0dp"
+    style="@style/TamanhoLetracaixa"/>
+<TextView
+    android:id="@+id/textDescricaopatologia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    style="@style/TamanhoLetra"
+    app:layout_constraintLeft_toLeftOf="@id/textNomepatologiaPat"
+    app:layout_constraintTop_toBottomOf="@id/caixapatnomepatologia"
+    android:layout_marginTop="5dp"
+    android:text="Descrição Patologia:"/>
+<EditText
+    android:id="@+id/caixapatdescricaopatologia"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginLeft="20dp"
+    app:layout_constraintTop_toBottomOf="@id/textDescricaopatologia"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/background_caixa"
+    style="@style/TamanhoLetracaixa"
+    android:paddingStart="12dp"
+    android:paddingEnd="0dp"
+    android:layout_marginRight="20dp"/>
+<TextView
+    android:id="@+id/textdataultimoexamePat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Data Último Exame:"
+    style="@style/TamanhoLetra"
+    android:textColor="@color/black"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginLeft="20dp"
+    app:layout_constraintTop_toBottomOf="@id/caixapatdescricaopatologia"
+    android:layout_marginTop="5dp"
+    />
+<EditText
+    android:id="@+id/caixapatdataultimoexame"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="0dp"
+    android:hint="XX/XX/XXXX"
+    android:textColorHint="@color/hint"
+    style="@style/TamanhoLetracaixa"
+    android:layout_marginTop="20dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/textdataultimoexamePat"
+    android:inputType="number"
+    />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSavePat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caixapatdataultimoexame"
+        android:text="Salvar"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_botao_laranja"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancelPat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_botao_laranja"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Cancelar"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnDelPat"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSavePat" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDelPat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_botao_laranja"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="DELETAR"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

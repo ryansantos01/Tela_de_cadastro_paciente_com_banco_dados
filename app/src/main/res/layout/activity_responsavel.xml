@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Responsavel_Activity"
+    android:background="@color/azul_claro">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layemerg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="10dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEmerg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/background_botao_emergency" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOTÃO DE EMERGÊNCIA"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aperte apenas em necessidade"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textidentificacaoresponsavelResp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Identificação Responsável"
+            android:textColor="@color/black"
+            style="@style/TamanhoLetra"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp"/>
+        <TextView
+            android:id="@+id/textnomepacienteResp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome Paciente:"
+            android:textColor="@color/black"
+            style="@style/TamanhoLetra"
+            app:layout_constraintLeft_toLeftOf="@id/textidentificacaoresponsavelResp"
+            app:layout_constraintTop_toBottomOf="@id/textidentificacaoresponsavelResp"
+            android:layout_marginTop="10dp"/>
+<TextView
+    android:id="@+id/textonomepacienteresponsavel"
+    app:layout_constraintTop_toBottomOf="@id/textnomepacienteResp"
+    android:layout_marginTop="5dp"
+    app:layout_constraintLeft_toLeftOf="@id/textnomepacienteResp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/TamanhoLetra"
+    android:textColor="@color/black"
+    android:textStyle="bold|italic"/>
+        <Spinner
+            android:id="@+id/spinnernomepacienteresponsavel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textonomepacienteresponsavel"
+            android:layout_marginTop="10dp"
+            android:popupBackground="@drawable/background_interno_spinner"
+            android:backgroundTint="@color/black"
+            android:theme="@style/Spinnerpersonalizado"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <TextView
+            android:id="@+id/textnomeresponsavelResp"
+            style="@style/TamanhoLetra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome Responsável:"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@id/textnomepacienteResp"
+            app:layout_constraintTop_toBottomOf="@id/spinnernomepacienteresponsavel"
+            android:layout_marginTop="5dp"/>
+<EditText
+    android:id="@+id/caixarespnomeresponsavel"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/background_caixa"
+    app:layout_constraintTop_toBottomOf="@id/textnomeresponsavelResp"
+    app:layout_constraintLeft_toLeftOf="@id/textnomeresponsavelResp"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="5dp"
+    style="@style/TamanhoLetracaixa"
+    android:hint="ex: Carlos"
+    android:textColorHint="@color/hint"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"/>
+    <TextView
+        android:id="@+id/textemailresponsavelResp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Responsável:"
+        android:textColor="@color/black"
+        style="@style/TamanhoLetra"
+        app:layout_constraintLeft_toLeftOf="@id/textnomeresponsavelResp"
+        app:layout_constraintTop_toBottomOf="@id/caixarespnomeresponsavel"
+        android:layout_marginTop="5dp"/>
+   <EditText
+       android:id="@+id/caixarespemailresponsavel"
+       android:layout_width="match_parent"
+       android:layout_height="48dp"
+       android:background="@drawable/background_caixa"
+       app:layout_constraintTop_toBottomOf="@id/textemailresponsavelResp"
+       app:layout_constraintLeft_toLeftOf="@id/textemailresponsavelResp"
+       app:layout_constraintRight_toRightOf="parent"
+       style="@style/TamanhoLetracaixa"
+       android:layout_marginTop="5dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginLeft="20dp"
+       android:textColorHint="@color/hint"
+       android:hint="ex: XXXXX@XXX.XXX"
+       android:paddingStart="12dp"
+       android:paddingEnd="12dp"/>
+   <TextView
+       android:id="@+id/textcelularresponsavelResp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Celular Responsável:"
+       android:textColor="@color/black"
+       style="@style/TamanhoLetra"
+       app:layout_constraintLeft_toLeftOf="@id/textemailresponsavelResp"
+       app:layout_constraintTop_toBottomOf="@id/caixarespemailresponsavel"
+       android:layout_marginTop="5dp"/>
+        <EditText
+            android:id="@+id/caixarespcelularresponsavel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background_caixa"
+            android:hint="(XX)XXXXX-XXXX"
+            style="@style/TamanhoLetracaixa"
+            android:textColorHint="@color/hint"
+            android:paddingStart="12dp"
+            android:paddingEnd="0dp"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/textcelularresponsavelResp"
+            app:layout_constraintLeft_toLeftOf="@id/textcelularresponsavelResp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/textwhatsappresponsavelResp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whatsapp Responsável:"
+            android:textColor="@color/black"
+            style="@style/TamanhoLetra"
+            app:layout_constraintLeft_toLeftOf="@id/textcelularresponsavelResp"
+            app:layout_constraintTop_toBottomOf="@id/caixarespcelularresponsavel"
+            android:layout_marginTop="5dp"/>
+            <EditText
+                android:id="@+id/caixarespwhatsappresponsavel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/background_caixa"
+                android:hint="(XX)XXXXX-XXXX"
+                android:inputType="number"
+                style="@style/TamanhoLetracaixa"
+                android:textColorHint="@color/hint"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                app:layout_constraintLeft_toLeftOf="@id/textwhatsappresponsavelResp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintTop_toBottomOf="@id/textwhatsappresponsavelResp"
+                android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/texttiporesponsavelResp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo Responsável:"
+            android:textColor="@color/black"
+            style="@style/TamanhoLetra"
+            app:layout_constraintLeft_toLeftOf="@id/textwhatsappresponsavelResp"
+            app:layout_constraintTop_toBottomOf="@id/caixarespwhatsappresponsavel"
+            android:layout_marginTop="5dp"/>
+
+<Spinner
+    android:id="@+id/spinnertiporesponsavel"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    app:layout_constraintLeft_toLeftOf="@id/texttiporesponsavelResp"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="5dp"
+    app:layout_constraintTop_toBottomOf="@id/texttiporesponsavelResp"
+    android:backgroundTint="@color/black"
+    style="@style/Spinnerpersonalizado"
+    />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnSaveResp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Salvar"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:layout_marginTop="32dp"
+    android:layout_marginBottom="10dp"
+    app:layout_constraintTop_toBottomOf="@id/caixamensagemEmergencia"
+    android:background="@drawable/background_botao_laranja"
+    app:layout_constraintBottom_toTopOf="@id/btnCancelResp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancelResp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Cancelar"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_botao_laranja"
+            app:layout_constraintBottom_toTopOf="@id/btnDelResp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDelResp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_botao_laranja"
+            android:text="Deletar"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/layemerg"
+            android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+            android:id="@+id/mensagemEmergencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mensagem de Emergência:"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/texttiporesponsavelResp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toBottomOf="@id/spinnertiporesponsavel" />
+
+
+        <EditText
+            android:id="@+id/caixamensagemEmergencia"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background_caixa"
+            android:textAllCaps="true"
+            android:hint="Escreva sua mensagem:"
+            android:inputType="text|textMultiLine|textAutoCorrect"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/black"
+            style="@style/TamanhoLetracaixa"
+            android:textColorHint="@color/hint"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="@id/mensagemEmergencia"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mensagemEmergencia" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
