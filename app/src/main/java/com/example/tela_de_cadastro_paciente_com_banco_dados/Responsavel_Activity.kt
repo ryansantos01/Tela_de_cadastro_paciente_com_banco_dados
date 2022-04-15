@@ -24,6 +24,7 @@ import kotlinx.android.synthetic.main.activity_responsavel.*
 import kotlinx.android.synthetic.main.activity_tela_do_meio.*
 import kotlinx.android.synthetic.main.content_responsavel.*
 import java.net.URLEncoder
+import kotlinx.android.synthetic.main.activity_responsavel.btnEmerg as btnEmerg1
 
 class Responsavel_Activity : AppCompatActivity() {
 
@@ -115,21 +116,30 @@ class Responsavel_Activity : AppCompatActivity() {
             }
 
         btnEmerg.setOnClickListener {
+
             var sms = SmsManager.getDefault()
-            sms.sendTextMessage(caixarespwhatsappresponsavel.text.toString(), "ME", caixamensagemEmergencia.text.toString(), null, null)
+            sms.sendTextMessage(
+                caixarespwhatsappresponsavel.text.toString(),
+                "ME",
+                caixamensagemEmergencia.text.toString(),
+                null,
+                null
+            )
             Toast.makeText(this, "SMS enviado com Sucesso!", Toast.LENGTH_LONG).show()
 
             when {
-                /* caixarespwhatsappresponsavel.text.isNullOrEmpty() -> {
-                     showMessage(getString(R.string.please_enter_mobile_number))
-                 }
-                 caixarespwhatsappresponsavel.text?.length != 14 -> {
-                     showMessage(getString(R.string.please_enter_valid_mobile_number))
-                 }
-
-                 */
+                caixarespwhatsappresponsavel.text.isNullOrEmpty() -> {
+                    showMessage(getString(R.string.please_enter_mobile_number))
+                }
+                caixarespwhatsappresponsavel.text?.length != 11 -> {
+                    showMessage(getString(R.string.please_enter_valid_mobile_number))
+                }
                 else -> {
-                    val url = "https://api.whatsapp.com/send?phone=+55" + caixarespwhatsappresponsavel.text.toString() + "&text=" + URLEncoder.encode(caixamensagemEmergencia.text.toString(), "UTF-8")
+                    val url =
+                        "https://api.whatsapp.com/send?phone=+55" + caixarespwhatsappresponsavel.text.toString() + "&text=" + URLEncoder.encode(
+                            caixamensagemEmergencia.text.toString(),
+                            "UTF-8"
+                        )
                     val intent = Intent(Intent.ACTION_VIEW).apply {
                         setPackage("com.whatsapp")
                         data = Uri.parse(url)
@@ -202,7 +212,7 @@ class Responsavel_Activity : AppCompatActivity() {
                 if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.KITKAT){
                     for (sms in Telephony.Sms.Intents.getMessagesFromIntent(p1)){
                         caixarespwhatsappresponsavel.setText(sms.originatingAddress)
-                        mensagemEmergencia.setText(sms.displayMessageBody)
+                        mensagemEmergencia.setText("*"+sms.displayMessageBody+"*")
                     }
                 }
 

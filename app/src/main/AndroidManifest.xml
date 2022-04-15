@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tela_de_cadastro_paciente_com_banco_dados">
         <activity
-            android:name=".Tela_do_meio"
+            android:name=".ActivityHome"
             android:exported="true"
             android:parentActivityName=".Enfermeiro.ActivityLogin">
             <intent-filter>
@@ -59,7 +59,7 @@
             android:name=".Paciente_Activity"
             android:exported="true" />
         <activity
-            android:name=".ActivityHome"
+            android:name=".Tela_do_meio"
             android:exported="true">
 
 

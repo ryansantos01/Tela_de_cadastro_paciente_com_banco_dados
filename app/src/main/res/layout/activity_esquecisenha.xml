@@ -108,10 +108,11 @@
                     android:layout_marginStart="100dp"
                     android:layout_marginTop="30dp"
                     android:layout_marginEnd="100dp"
-                    android:background="@drawable/background_botao"
+                    android:fontFamily="@font/poppins_medium"
+                    android:background="@drawable/background_botao_roxo_rosa"
                     android:text="Enviar"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
             </RelativeLayout>

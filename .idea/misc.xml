@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Cotuca/Downloads/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_tela_do_meio.xml" value="0.1082427536231884" />
+        <entry key="..\:/Users/Cotuca/Downloads/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_botao_roxo_rosa.xml" value="0.1425" />
+        <entry key="..\:/Users/Cotuca/Downloads/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_esquecisenha.xml" value="0.17" />
+        <entry key="..\:/Users/Cotuca/Downloads/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_login.xml" value="0.17" />
+        <entry key="..\:/Users/Cotuca/Downloads/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_novasenha.xml" value="0.17" />
+        <entry key="..\:/Users/Cotuca/Downloads/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_patologia.xml" value="0.19610507246376813" />
+        <entry key="..\:/Users/Cotuca/Downloads/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_responsavel.xml" value="0.17" />
+        <entry key="..\:/Users/Cotuca/Downloads/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activity_tela_do_meio.xml" value="0.25" />
+        <entry key="..\:/Users/Cotuca/Downloads/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/layout/activityresponsaveltelaeregistro.xml" value="0.19610507246376813" />
         <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable-v24/background_triangulo_esquerdo.xml" value="0.2064814814814815" />
         <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2064814814814815" />
         <entry key="..\:/Users/samba/AndroidStudioProjects/Tela_de_cadastro_paciente_com_banco_dados/app/src/main/res/drawable/background_botao.xml" value="0.18981481481481483" />

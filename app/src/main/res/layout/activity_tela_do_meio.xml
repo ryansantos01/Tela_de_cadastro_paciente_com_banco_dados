@@ -9,9 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
+        android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/btnPac1"
@@ -59,6 +57,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btnMedicamento" />
+
         <Button
             android:id="@+id/btnResponsavel"
             android:layout_width="match_parent"
@@ -68,8 +67,8 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/background_botao"
             android:text="Responsável"
-            android:textSize="30sp"
             android:textColor="@color/black"
+            android:textSize="30sp"
             app:cornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,13 +83,14 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/background_botao_laranja"
             android:text="Sair"
-            android:textSize="30sp"
             android:textColor="@color/black"
+            android:textSize="30sp"
             app:cornerRadius="20dp"
-            app:layout_constraintTop_toBottomOf="@id/btnResponsavel"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-             />
+            app:layout_constraintTop_toBottomOf="@id/textView5" />
 
         <TextView
             android:id="@+id/textViewOqueDeseja"
@@ -105,7 +105,43 @@
             android:fontFamily="sans-serif-medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-           app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEmerg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/background_botao_emergency"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnResponsavel" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOTÃO DE EMERGÊNCIA"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEmerg" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aperte apenas em necessidade"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>
