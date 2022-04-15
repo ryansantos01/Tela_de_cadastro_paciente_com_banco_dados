@@ -6,4 +6,5 @@ data class Enfermeiro(
     val email: String="",
     val coren: String="",
     val password: String="",
+    var tipoUsuario: String="",
 )

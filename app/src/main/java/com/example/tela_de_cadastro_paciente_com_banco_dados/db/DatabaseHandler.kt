@@ -43,7 +43,7 @@ class DatabaseHandler(ctx: Context): SQLiteOpenHelper(ctx, DB_NOME,null, DB_VERS
   p0?.execSQL(CREATE_TABLE_PATOLOGIA)
 
   val CREATE_TABLE_ENFERMEIRO = "CREATE TABLE $TABELA_NOME_ENFERMEIRO($IDENFERMEIRO INTEGER PRIMARY KEY," +
-          " $NOMEENFERMEIRO TEXT, $EMAILENFERMEIRO  TEXT, $CORENENFERMEIRO TEXT, " +
+          " $NOMEENFERMEIRO TEXT, $EMAILENFERMEIRO  TEXT, $TIPOUSUARIO TEXT, $CORENENFERMEIRO TEXT, " +
           "$SENHAENFERMEIRO TEXT);"
   p0?.execSQL(CREATE_TABLE_ENFERMEIRO)
 
@@ -550,13 +550,14 @@ class DatabaseHandler(ctx: Context): SQLiteOpenHelper(ctx, DB_NOME,null, DB_VERS
   values.put(NOMEENFERMEIRO, enfermeiro.name)
   values.put(EMAILENFERMEIRO, enfermeiro.email)
   values.put(CORENENFERMEIRO, enfermeiro.coren)
+  values.put(TIPOUSUARIO, enfermeiro.tipoUsuario)
   values.put(SENHAENFERMEIRO, enfermeiro.password)
   db.insert(TABELA_NOME_ENFERMEIRO, null, values)
   db.close()
  }
 
  fun getAllUser(): ArrayList<Enfermeiro> {
-  val columns = arrayOf(IDENFERMEIRO, EMAILENFERMEIRO, NOMEENFERMEIRO, CORENENFERMEIRO, SENHAENFERMEIRO)
+  val columns = arrayOf(IDENFERMEIRO, EMAILENFERMEIRO, NOMEENFERMEIRO, CORENENFERMEIRO, TIPOUSUARIO, SENHAENFERMEIRO)
   val sortOrder = "$NOMEENFERMEIRO ASC"
   val userList = ArrayList<Enfermeiro>()
   val db = this.readableDatabase
@@ -576,6 +577,7 @@ class DatabaseHandler(ctx: Context): SQLiteOpenHelper(ctx, DB_NOME,null, DB_VERS
      name = cursor.getString(cursor.getColumnIndexOrThrow(NOMEENFERMEIRO)),
      email = cursor.getString(cursor.getColumnIndexOrThrow(EMAILENFERMEIRO)),
      password = cursor.getString(cursor.getColumnIndexOrThrow(SENHAENFERMEIRO)),
+     tipoUsuario = cursor.getString(cursor.getColumnIndexOrThrow(TIPOUSUARIO)),
      coren = cursor.getString(cursor.getColumnIndexOrThrow(CORENENFERMEIRO)))
     userList.add(user)
    } while (cursor.moveToNext())
@@ -592,6 +594,7 @@ class DatabaseHandler(ctx: Context): SQLiteOpenHelper(ctx, DB_NOME,null, DB_VERS
   values.put(EMAILENFERMEIRO, enfermeiro.email)
   values.put(CORENENFERMEIRO, enfermeiro.coren)
   values.put(SENHAENFERMEIRO, enfermeiro.password)
+  values.put(TIPOUSUARIO, enfermeiro.tipoUsuario)
   db.update(
    TABELA_NOME_ENFERMEIRO, values, "$IDENFERMEIRO = ?",
    arrayOf(enfermeiro.id.toString()))
@@ -742,6 +745,7 @@ private val IDPACIENTEPATOLOGIA="IdPacientePatologia"
   private val EMAILENFERMEIRO = "EmailEnfermeiro"
   private val SENHAENFERMEIRO = "SenhaEnfermeiro"
   private val CORENENFERMEIRO = "CorenEnfermeiro"
+  private val TIPOUSUARIO="TipoUsuario"
 
 
 }

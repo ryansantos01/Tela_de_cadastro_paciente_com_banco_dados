@@ -35,9 +35,8 @@
                 <ImageView
                     android:id="@+id/containerretangulo"
                     android:layout_width="350dp"
-                    android:layout_height="620dp"
+                    android:layout_height="650dp"
                     android:layout_centerInParent="true"
-                    android:layout_centerVertical="true"
                     android:layout_marginTop="50dp"
                     android:layout_marginBottom="5dp"
                     android:src="@drawable/background_retangulo" />

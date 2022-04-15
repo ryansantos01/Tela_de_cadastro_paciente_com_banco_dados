@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ArrayAdapter
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.widget.NestedScrollView
@@ -14,6 +15,8 @@ import com.example.tela_de_cadastro_paciente_com_banco_dados.model.Enfermeiro
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import kotlinx.android.synthetic.main.activity_enfermeiro.*
+import kotlinx.android.synthetic.main.activity_responsavel.*
 
 
 class ActivityEnfermeiro : AppCompatActivity(), View.OnClickListener {
@@ -46,6 +49,9 @@ class ActivityEnfermeiro : AppCompatActivity(), View.OnClickListener {
      appCompatTextViewLoginLink.setOnClickListener {
          loginActv()
      }
+        var tipousuario = arrayOf("", "PACIENTE", "ENFERMEIRO(A)")
+        spinnertipousuario.adapter =
+            ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, tipousuario)
     }
 
     /**
@@ -135,6 +141,7 @@ class ActivityEnfermeiro : AppCompatActivity(), View.OnClickListener {
             var user = Enfermeiro(name = textInputEditTextName!!.text.toString().trim(),
                 email = textInputEditTextEmail!!.text.toString().trim(),
                 coren = textInputEditTextCoren!!.text.toString().trim(),
+                tipoUsuario = spinnertipousuario!!.selectedItem.toString().trim(),
                 password = textInputEditTextPassword!!.text.toString().trim())
 
             databaseHelper!!.addUser(user)
